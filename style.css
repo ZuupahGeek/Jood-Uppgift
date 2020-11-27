@@ -34,8 +34,7 @@ button {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x:center ;
-    height: 60rem;
-    
+    height: 45rem;   
 }
 
 #topnav {
@@ -133,5 +132,15 @@ button {
     
 }
 
+    /* EC Utbildning carousel */
+
+#ec-utbildning .container {
+    width: 12rem;
+}
+
+
+.ec-logo {
+    width: 10rem;
+}
 
 
