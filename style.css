@@ -11,6 +11,8 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 button {
@@ -44,22 +46,22 @@ button {
 }
 
 #logo {
-    margin-left: 8.5rem;
+    margin-left: 8rem;
 }
 
 #logo img{
-    width: 5rem;
+    width: 6rem;
 }
 
 #nav-links {
-    margin-right: 6.5rem;
+    margin-right: 11rem;
 }
 
 #nav-links a {
-    margin-right: 1.5rem;
+    margin-right: 1.6rem;
     color: #ffffff;
     font-weight: 500;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .btn-navbar{
@@ -75,6 +77,61 @@ button {
 
         /* showcase 1 */
 
-#showcase-1-content {
-    font-family: ;
+
+#showcase-1 {
+    border: 1px solid black;
+    justify-content: space-between;
 }
+
+#showcase-1-content  {
+    margin-top: 8rem;
+    margin-left: 8.5rem;
+    width: 25rem;
+}
+
+#showcase-1-content h1 {
+    font-family: 'poppins', sans-serif;
+}
+
+#showcase-1-content p{
+    font-family: 'poppins', sans-serif;
+    line-height: 2;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top: 2rem;
+    font-size: 0.6rem;
+    width: 21rem;
+    margin-bottom: 2rem;
+}
+
+#showcase-1-btn button {
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#showcase-1-btn img {
+    width: 2.2rem;
+    margin-top: -0.3rem;
+    
+}
+
+#showcase-1-phone {
+    margin-right: 11rem;
+}
+
+.sc1-phone1, .sc1-phone2{
+    height: 25rem;
+}
+
+.sc1-phone1{
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: -7rem;
+    
+}
+
+
+
