@@ -1,22 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700;900&display=swap');
+
+
 
 * {
     box-sizing: border-box;
 }
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     padding: 0;
     margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto';
+    font-weight: 900;
     line-height: 1.4;
 }
 
+p {
+    color: #8A8A8A;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.8;
+}
+
 button {
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto';
 }
 
 
@@ -30,11 +39,10 @@ button {
         /* navbar */
 
 .bg-navbar {
-    background-image: url(images/blue_background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x:center ;
+    background: url(images/blue_background.png) no-repeat center;
+    background-size: cover;
     height: 45rem;   
+    width: auto;
 }
 
 #topnav {
@@ -94,6 +102,7 @@ button {
 
 #showcase-1-content p{
     font-family: 'poppins', sans-serif;
+    color: #ffffff;
     line-height: 2;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -143,4 +152,62 @@ button {
     width: 10rem;
 }
 
+            /* About Us Section */
 
+#about-us {
+    margin: 6rem 0 0 14rem;
+}
+
+.au-phone {
+    z-index: 1;
+    width: 13rem;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.circles {
+    z-index: 0;
+    width: 25rem;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: -7rem;
+    animation-duration: 20s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#au-content {
+    margin: 4rem 0 0 11rem;
+    width: 23rem;
+}
+
+
+
+.yellow-title {
+    background-color: #ffbb0036;
+    color: #FFBB00;
+    border: none;
+    border-radius: 6px;
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+}
+
+#app-logos a img {
+width: 9rem;
+margin-right: 1rem;
+}
+
+        /* Features Section */
+
+#features-section {
+    margin-top: 6rem;
+    background-color: #f5f5f557;
+}
