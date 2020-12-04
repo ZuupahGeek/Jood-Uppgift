@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 
 * {
@@ -29,55 +29,76 @@ button {
      font-family: 'Roboto';
 }
 
-
-
-
-
-        /* colors */
-
-
-
         /* navbar */
 
 .bg-navbar {
     background: url(images/blue_background.png) no-repeat center;
     background-size: cover;
-    height: 45rem;   
-    width: auto;
+    height: 37rem;   
+    min-width: 1200px;
+  
 }
 
-#topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1.8rem;
+.jood-logo {
+    margin-left: 3rem;
 }
 
-#logo {
-    margin-left: 8rem;
+.jood-logo a img {
+    height: 2.2rem;
 }
 
-#logo img{
-    width: 6rem;
+.navbar-links {
+    margin-right: 9.5rem;
 }
 
-#nav-links {
-    margin-right: 11rem;
-}
-
-#nav-links a {
+.nav-link {
+    position: relative;
     margin-right: 1.6rem;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.8rem;
 }
+
+.nav-link:hover {
+    color: #ffbb00;    
+}
+
+@keyframes underline {
+    0% {width: 0rem;}
+    100% {width: 1.5rem;}
+}
+
+
+.nav-link:hover::after {
+    position: absolute;
+    content: "";
+    background-color: #ffbb00;
+    width: 1.5rem;
+    height: 0.15rem;
+    left: 0.5rem;
+    top: 32px;
+    animation: underline;
+    animation-duration: 0.2s;
+  }
+
+  .active::after {
+    position: absolute;
+    content: "";
+    background-color: #ffbb00 !important;
+    width: 1.5rem;
+    height: 0.15rem;
+    left: 0.5rem;
+    top: 32px;   
+}
+
 
 .btn-navbar{
     background-color: #FFBB00;
     color: #ffffff;
+    margin-top: 0.3rem;
     font-size: 0.6rem;
     width: 6rem;
-    height: 1.7rem;
+    height: 1.8rem;
     border: none;
     border-radius: 6px;
     }
@@ -87,18 +108,19 @@ button {
 
 
 #showcase-1 {
-    border: 1px solid black;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 11rem;
 }
 
 #showcase-1-content  {
     margin-top: 8rem;
-    margin-left: 8.5rem;
-    width: 25rem;
+    width: 26rem;
 }
 
 #showcase-1-content h1 {
     font-family: 'poppins', sans-serif;
+    font-weight: 600;
 }
 
 #showcase-1-content p{
@@ -107,7 +129,7 @@ button {
     line-height: 2;
     letter-spacing: 1px;
     word-spacing: 2px;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 0.6rem;
     width: 21rem;
     margin-bottom: 2rem;
@@ -128,7 +150,8 @@ button {
 }
 
 #showcase-1-phone {
-    margin-right: 11rem;
+    /* margin-right: 9rem; */
+    
 }
 
 .sc1-phone1, .sc1-phone2{
@@ -145,6 +168,7 @@ button {
     /* EC Utbildning carousel */
 
 #ec-utbildning .container {
+    margin-top: 10rem;
     width: 12rem;
 }
 
@@ -218,7 +242,7 @@ margin-right: 1rem;
 
 #dots-bg img{
     height: 16rem;
-    margin: 2.2rem 0 0 -3.9rem;
+    margin: 2.2rem 0 0 -9rem;
 }
 
 #features-content {
@@ -514,4 +538,48 @@ margin-right: 5rem;
 
 .footer-social img {
     width: 1.5rem;
+}
+
+
+            /* Media Querys */
+
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+
+    .jood-logo {
+        margin-left: 8rem;
+    }
+
+
+        /* showcase section */
+    #showcase-1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #showcase-1-content  {
+        margin-top: 8rem;
+        width: 26rem;
+    }
+
+    #showcase-1-phone {
+        margin-left: 11rem;
+    }
+
+    /* features section */
+
+    #dots-bg img{
+        margin: 2.2rem 0 0 -3.9rem;
+    }
+    
 }
