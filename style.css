@@ -39,33 +39,28 @@ button {
   
 }
 
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
 
 .jood-logo {
-    margin-left: 3rem;
+    margin-left: -1.5rem;
 }
 
 .jood-logo a img {
     height: 2.2rem;
 }
 
-.navbar-toggler {
-    font-size: 2rem;
-    border: none !important;
-    /* margin-right: -7rem; */
-}
-
-
 .navbar-links {
-    position: relative;
-    text-align: right;    
-    /* margin-right: 9.5rem; */
+    margin-right: 9.5rem;
 }
 
 
 .nav-link {
-    position: relative;
-    margin-right: 1.6rem;
+    width: 6rem;
+    /* border: 1px solid black; */
+    
     color: #ffffff !important;
     font-weight: 600;
     font-size: 0.8rem;
@@ -521,7 +516,7 @@ margin-left: 12rem;
     width: 10rem;
     height: 2.5rem;
     margin-top: 1.5rem;
-    margin-left: 12rem;
+    margin-left: 17rem;
 }
 
         /* footer section */
@@ -637,13 +632,7 @@ margin-left: 12rem;
         .app-buttons {
             margin-left: 0rem;
         }
-
-
-        /* contact us section */
-
-        .btn-contact-us {   
-            margin-left: 17rem;
-        }
+        
 
         /* footer section */
 
@@ -664,19 +653,21 @@ margin-left: 12rem;
     /* navbar section */
 
     .bg-navbar {
-        min-width: 992px;   
+        min-width: 992px;
+      
     }
 
     .jood-logo {
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
 
-    .navbar-links {   
-        margin-right: 9.5rem;
+    .navbar-links {
+        margin-left: 7.5rem;
     }
 
 
     /* Showcase section */
+    
     #showcase-1 {
         margin-right: 11rem;
     }
