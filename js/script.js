@@ -26,16 +26,18 @@ $(function () {
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 dots: false,
               }
             },
             {
-              breakpoint: 576,
+              breakpoint: 575,
               settings: {
+                centerMode: false,
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: false,
               }
             }
             
@@ -61,14 +63,14 @@ $(function () {
             breakpoint: 800,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 1,
+              slidesToScroll: 2,
             }
           },
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+              slidesToShow: 2,
+              slidesToScroll: 2,
             }
           },
           

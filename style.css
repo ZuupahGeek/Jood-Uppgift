@@ -35,38 +35,29 @@ button {
     background: url(images/blue_background.png) no-repeat center;
     background-size: cover;
     height: 37rem;   
-    min-width: 600px;
-  
+    min-width: 100%;  
+}
+
+.navbar-brand img {
+    width: 6rem;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    padding-top: 2rem;
 }
 
-.jood-logo {
-    margin-left: -1.5rem;
+.nav-item {
+    margin-right: 1rem;
 }
 
-.jood-logo a img {
-    height: 2.2rem;
-}
-
-.navbar-links {
-    margin-right: 9.5rem;
-}
-
-
-.nav-link {
-    width: 6rem;
-    /* border: 1px solid black; */
-    
+.nav-item a {
+   position: relative; 
     color: #ffffff !important;
-    font-weight: 600;
+    font-weight: 550;
     font-size: 0.8rem;
 }
 
-.nav-link:hover {
+.nav-item a:hover {
     color: #ffbb00 !important;    
 }
 
@@ -76,7 +67,7 @@ button {
 }
 
 
-.nav-link:hover::after {
+.nav-item a:hover::after {
     position: absolute;
     content: "";
     background-color: #ffbb00;
@@ -120,7 +111,7 @@ button {
 }
 
 #showcase-1-content  {
-    margin-top: 4rem;
+    margin-top: 1rem;
     width: 26rem;
 }
 
@@ -170,17 +161,18 @@ button {
 
     /* EC Utbildning carousel */
 
-    #ec-utbildning {
-        margin-left: 0rem;
+    #ec-utbildning .application-slider {
+        margin-left: 0.4rem;
     }
 
-
-
+    #ec-utbildning img{
+        width: 5rem;
+    }
 
             /* About Us Section */
 
 #about-us {
-    margin: -6rem 0 0rem 0;
+    margin: -10rem 0 0 -5rem;
 }
 
 #au-content {
@@ -273,8 +265,7 @@ margin-right: 1rem;
 
 .features-grid {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto;
     grid-gap: 10px;
 }
 
@@ -343,6 +334,7 @@ margin-left: 12rem;
 
 .application-slider {
     margin-top: 2rem;
+    margin-left: 6rem;
 }
 
 .slick-slider .slide-item {
@@ -356,11 +348,11 @@ margin-left: 12rem;
    
 }
 
-.slick-slider > .slick-active img {
+.slick-slider .slick-active img {
     opacity: 60%;
 }
 
-.slick-slider > .slick-center img {
+.slick-slider .slick-center img {
     transform: scale(1.2);
     opacity: 100%;
 }
@@ -377,6 +369,7 @@ margin-left: 12rem;
 }
 
 .statistics-bg {
+    display: none;
     background-image: url(images/world-bg.svg);
     background-size: 36rem;
     background-repeat: no-repeat;
@@ -444,14 +437,14 @@ margin-left: 12rem;
 }
 
 .download-content p {
-    margin-left: 3rem;
+    margin-left: 1rem;
     font-size: 0.6rem;
     width: 23rem;
     color: #ffffff;
 }
 
 .app-buttons {
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 .app-buttons > a > img {
@@ -516,10 +509,11 @@ margin-left: 12rem;
     width: 10rem;
     height: 2.5rem;
     margin-top: 1.5rem;
-    margin-left: 17rem;
+    margin-left: 7rem;
 }
 
         /* footer section */
+
 .footer-bg {
     margin-top: 5rem;
     height: 13rem;
@@ -546,10 +540,10 @@ margin-left: 12rem;
 
 .footer-links a {
     color: #ffffff;
-    margin-right: 2.6rem;
+    margin-right: 1rem;
     margin-top: 0.9rem;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .footer-social {
@@ -569,6 +563,93 @@ margin-left: 12rem;
 
             /* Media Querys */
 
+   @media (min-width: 576px) {
+
+
+    /* Navbar section */
+
+    .navbar {
+        margin-left: 7.5rem;
+    }
+
+    .bg-navbar {
+        background: url(images/blue_background.png) no-repeat center;
+        background-size: cover;
+        height: 37rem;   
+        min-width: 600px;  
+    }
+
+            /* Showcase section */
+
+    #showcase-1-content  {
+        margin-top: 4rem;
+        width: 26rem;
+}
+
+            /* EC-utblidning Carousel */
+
+    #ec-utbildning img{
+        width: 7rem;
+    }
+
+        /* About Us Section */
+        #about-us {
+            margin: -6rem 0 0 0;
+        }
+
+
+        /* Features Section */
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+        }
+
+
+        /* Application Screens Section */
+
+        .application-slider {
+            margin-top: 2rem;
+            margin-left: 0;
+        }
+
+        /* Application Statistics section */
+
+        .statistics-bg {
+            display: block;
+            background-image: url(images/world-bg.svg);
+            background-size: 36rem;
+            background-repeat: no-repeat;
+            background-position-y: 3rem;
+            background-position-x: 1rem;
+            
+        }
+
+        /* Download the app section */
+
+        .download-content p {
+            margin-left: 3rem;
+        }
+
+        .app-buttons {
+            margin-left: 5rem;
+        }
+
+        /* Contact us section */
+
+        .btn-contact-us {
+            margin-left: 12rem;
+        }
+
+        /* Footer Section */
+
+        .footer-links a {
+            margin-right: 2.6rem;
+            font-size: 0.8rem;
+        }
+   }
+
 
 @media (min-width: 768px) {
 
@@ -579,11 +660,16 @@ margin-left: 12rem;
       
     }
 
+    /* EC utbildning Carousel */
+    
+    #ec-utbildning img{
+        width: 8rem;
+    }
 
     /* about us section */
 
     #about-us {
-        margin: 6rem 0 0 1rem;
+        margin: -3rem 0 0 1rem;
     }
 
     #au-content {
@@ -614,6 +700,15 @@ margin-left: 12rem;
         margin-left: -5rem;
     }
     
+
+    .statistics-bg {
+        background-image: url(images/world-bg.svg);
+        background-size: 36rem;
+        background-repeat: no-repeat;
+        background-position-y: 3rem;
+        background-position-x: 4rem;
+        
+    }
 
      /* Download section */
 
@@ -657,17 +752,15 @@ margin-left: 12rem;
       
     }
 
-    .jood-logo {
-        margin-left: 3rem;
-    }
-
-    .navbar-links {
-        margin-left: 7.5rem;
+    .navbar {
+        padding-top: 2rem;
+        margin-left: 5rem;
+        margin-right: 6rem;
     }
 
 
     /* Showcase section */
-    
+
     #showcase-1 {
         margin-right: 11rem;
     }
@@ -745,17 +838,8 @@ margin-left: 12rem;
 @media (min-width: 1200px) {
 
 /* navbar section */
-    .jood-logo {
-        margin-left: 8rem;
-    }
+ 
 
-    .navbar-links {
-        margin-right: 11rem;
-    }
-
-    .navbar-dark {
-        color: #ffffff !important;
-    }
     
     .bg-navbar {
         background: url(images/blue_background.png) no-repeat center;
@@ -765,6 +849,11 @@ margin-left: 12rem;
       
     }
 
+    .navbar {
+        padding-top: 2rem;
+        margin-left: 7.5rem;
+        margin-right: 10rem;
+    }
 
 
         /* showcase section */
